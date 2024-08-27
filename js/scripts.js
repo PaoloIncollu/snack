@@ -42,15 +42,16 @@ const album = [
 
 ];
 
-let currentMusic = 0;
 console.table(album);
+let currentMusic = album[0].durata;
+
 
 for ( let i = 0; i < album.length; i++ )
 
     {
         if( album[i].durata > currentMusic){
 
-            currentMusic=album[i].durata;
+            currentMusic = album[i].durata;
         }
     }
 
@@ -68,13 +69,9 @@ for ( let j=0; j< album.length; j ++){
 
 
 
-
-
-
-
-
-
 /*SNACK 2
 Creare un array di oggetti: ogni oggetto descriverà un’automobile con le seguenti proprietà: nome, marca, cilindrata, colori disponibili e consumo (litri/km).
 Stampare la struttura in console.
 Stampare a schermo il nome e la marca dell’auto che consuma meno.*/
+
+
